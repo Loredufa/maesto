@@ -1,13 +1,12 @@
+import json
 import os
 import re
-from rich.console import Console
-from rich.panel import Panel
 from datetime import datetime
-import json
 
 # Set up the Groq API client
 from groq import Groq
-import os
+from rich.console import Console
+from rich.panel import Panel
 
 client = Groq(api_key="YOUR API KEY")
 

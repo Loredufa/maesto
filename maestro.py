@@ -1,10 +1,11 @@
+import json
 import os
-from anthropic import Anthropic
 import re
+from datetime import datetime
+
+from anthropic import Anthropic
 from rich.console import Console
 from rich.panel import Panel
-from datetime import datetime
-import json
 from tavily import TavilyClient
 
 # Set up the Anthropic API client

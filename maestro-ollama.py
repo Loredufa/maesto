@@ -1,12 +1,13 @@
+import argparse
+import json
 import os
 import re
 from datetime import datetime
-import json
-from rich.console import Console
-from rich.panel import Panel
+
 import ollama
 from ollama import Client  # Import the Ollama client
-import argparse
+from rich.console import Console
+from rich.panel import Panel
 
 # Only for the first time run based on the model you want to use
 # ollama.pull('llama3:70b')

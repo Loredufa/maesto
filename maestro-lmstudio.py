@@ -1,11 +1,12 @@
+import json
 import os
 import re
+from datetime import datetime
+
+from openai import OpenAI
 from rich.console import Console
 from rich.panel import Panel
-from datetime import datetime
-import json
 from tavily import TavilyClient
-from openai import OpenAI
 
 # Set up the LM Studio API client
 client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")

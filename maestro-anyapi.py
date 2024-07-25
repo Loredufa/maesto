@@ -1,10 +1,11 @@
+import json
 import os
 import re
+from datetime import datetime
+
+from litellm import completion
 from rich.console import Console
 from rich.panel import Panel
-from datetime import datetime
-import json
-from litellm import completion
 from tavily import TavilyClient
 
 # Set environment variables for API keys for the services you are using
